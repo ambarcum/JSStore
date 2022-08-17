@@ -93,10 +93,24 @@ header {
   background: rgba(204, 204, 204, 0.8);
 }
 
+.header_items {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  font-size: 30px;
+  font-family: monospace;
+}
+
 .card {
   height: 35px;
-  width: 5%;
-  margin-top: 25px;
+  padding: 7px;
+  border: 1px solid grey;
+  border-radius: 6px;
+  background-color: beige;
 }
 
 .products {
@@ -107,7 +121,7 @@ header {
 }
 
 .products_item {
-  height: 150px;
+  height: 250px;
   width: 20%;
   display: flex;
   flex-direction: column;
@@ -116,6 +130,10 @@ header {
   border: 2px solid rgba(204, 204, 204, 0.8);
   border-radius: 35px;
   background-color: gainsboro;
+}
+
+.item_img {
+  height: 100px;
 }
 
 .item_heading {
