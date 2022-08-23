@@ -7,6 +7,7 @@ const products = [
 
 const renderProduct = (product) =>
     `<div class="products_item">
+    <img class = "item_img" src="img/${product.id}.jpg" alt="img">
     <h4 class="item_heading">${product.title}</h4>
     <p class="item_price">${product.price}</p>
     <button class="item_butt">Купить</button>
