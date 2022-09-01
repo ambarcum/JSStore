@@ -105,19 +105,85 @@ header {
   font-family: monospace;
 }
 
+.card_logo {
+  fill: black;
+}
+
+.card_logo:hover {
+  fill: red;
+}
+
 .card {
-  height: 35px;
-  padding: 7px;
-  border: 1px solid grey;
-  border-radius: 6px;
-  background-color: beige;
+  width: 500px;
+  position: absolute;
+  top: 150px;
+  right: 50px;
+  border: 1px solid red;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.card_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.invis {
+  display: block;
+}
+
+.card_img {
+  height: 55px;
+  width: 100px;
+}
+
+.card_heading {
+  width: 20%;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: cursive;
+}
+
+.card_price {
+  width: 20%;
+  font-size: 15px;
+  color: red;
+  font-family: fantasy;
+}
+
+.card_quantity {
+  width: 7%;
+  border: 1px solid red;
+  color: red;
+  text-align: center;
+}
+
+.card_quantityPlus,
+.card_quantityMinus {
+  border: 1px solid red;
+  width: 20px;
+}
+
+.card_delete {
+  width: 11%;
+  background-color: white;
+  color: #ccc;
+  border: 1px solid red;
+}
+
+.card_delite:hover {
+  color: red;
 }
 
 .products {
   margin-top: 150px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .products_item {
